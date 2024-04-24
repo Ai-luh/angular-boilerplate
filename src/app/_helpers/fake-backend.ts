@@ -341,6 +341,7 @@ export class FakeBackendInterceptor implements HttpInterceptor {
             return parseInt(urlParts[urlParts.length - 1]);
         }
 
+        
         function newAccountId() {
             return accounts.length ? Math.max(...accounts.map(x => x.id)) + 1 : 1;
         }
